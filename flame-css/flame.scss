@@ -1,0 +1,125 @@
+$dark: #223;
+$black: #334;
+$gray: #667;
+$white: #ccd;
+$green: #88FF88;
+$blue: #8888FF;
+$red: #FF8888;
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+
+    background-color: $black;
+    margin: 0;
+
+    h1 {
+        color: $red;
+        &::selection {
+            background-color: $dark;
+        }
+    }
+    h2, h3, h4, h5, h6, p, ol, ul, em, strong {
+        color: $white;
+        &::selection {
+            color: $red;
+            background-color: $dark;
+        }
+    }
+    a {
+        color: $red;
+        text-decoration: none;
+        transition: color 100ms;
+        &:hover {
+            color: $blue;
+        }
+        &::selection {
+            color: $red;
+            background-color: $dark;
+        }
+    }
+    blockquote {
+        color: gray;
+        font-style: italic;
+        &::selection {
+            color: $red;
+            background-color: $dark;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        background-color: $dark;
+
+        .nav-item {
+            padding: 1em;
+
+            .nav-link {
+                color: $white;
+                text-decoration: none;
+                transition: color 150ms;
+                &:hover {
+                    color: $gray;
+                }
+            }
+        }
+    }
+
+    .container {
+        margin: 2em;
+        padding-left: 16%;
+        padding-right: 16%;
+    }
+
+    .btn {
+        background-color: $dark;
+        color: $red;
+        padding: 1em;
+        border-radius: 1em;
+        border: none;
+        transition: background-color 100ms;
+        transition: border-radius 100ms;
+        &:hover {
+            background-color: $gray;
+            color: $red;
+            border-radius: 2em;
+        }
+        &:active {
+            background-color: $white;
+        }
+    }
+    .btn-outline {
+        background-color: $black;
+        color: $red;
+        padding: 1em;
+        border-radius: 1em;
+        border: 0.1em solid $dark;
+        transition: color 100ms;
+        transition: border-color 100ms;
+        transition: border-radius 100ms;
+        &:hover {
+            border-color: $gray;
+            color: $red;
+            border-radius: 2em;
+            transition: border-color 100ms;
+        }
+        &:active {
+            border-color: $white;
+        }
+    }
+
+    code, pre {
+        color: $red;
+        font-family: 'Fira Code', monospace;
+        background-color: $dark;
+    }
+
+    pre {
+        padding: 16px;
+        border-radius: 8px;
+    }
+    code {
+        padding-left: 4px;
+        padding-right: 4px;
+        border-radius: 4px;
+    }
+}

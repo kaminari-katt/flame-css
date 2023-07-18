@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flame CSS (Create decent Docs in Dark Mode)</title>
+
+    <link rel="stylesheet" href="flame-css/flame.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-item">
+            <a href="#intro" class="nav-link">Home</a>
+        </div>
+        <div class="nav-item">
+            <a href="#features" class="nav-link">Features</a>
+        </div>
+        <div class="nav-item">
+            <a href="#download" class="nav-link">Download</a>
+        </div>
+        <div class="nav-item">
+            <a href="#get-started" class="nav-link">Get Started</a>
+        </div>
+    </nav>
+
+    <div class="container" >
+        <div id="intro">
+            <h1>flame-css</h1>
+            <p>A very decent looking CSS Framework Geared towards Doc Creators using only HTML and CSS</p>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div id="features">
+            <h1>Features</h1>
+            <h3>Colors</h3>
+            <p>Red and Black Colors are used to get clean in unique look for your document. Text selection does red text, try selecting this text. Also Buttons use Red and Black.</p>
+            <h3>Ample of Animations and Transitions</h3>
+            <p>Some good amount of Transitions and Animations are made for few components which deserve some. Like the button having colors ans border Transitions. Also they are visible and quick. It gives a salty Visual Feedback which is very good than just having a simple default button.</p>
+            <h3>Font</h3>
+            <p>The font 'Fira Sans' and 'Fira Code' are used to get a matching Font as well as readable font.</p>
+        </div>
+        <hr>
+        <div id="download">
+            <h1>Get It</h1>
+            <p>All you have to do is just download the small files and simply paste it inside your website's working directory (or anywehre else as per your preferences) and just use the following code inside the head tag in the html file</p>
+            <code>&lt;link rel="stylesheet" src="flame-css/flame.min.css"&gt;</code>
+            <p>The current version is "beta1", flame-css-beta2 is Work In Progress. beta1 is basically very basic and just works. It will have more features expected in the next few beta releases. This website uses the current beta version that can be viewed as an Example.</p>
+        </div>
+        <hr>
+        <div id="get-started">
+            <h1>Get Started</h1>
+            <h2>Kickstarter</h2>
+            <p>As a Kickstarter, I will be explaining how to get started. After when you have linked the css file, you can use its unique styles by referring those classes and use tags to fine finish your website.</p>
+            <h3>A simple DOC Site</h3>
+            <p>We will start from creating a Documentary site using flame-css.</p>
+            <p>Lets create a navbar to be able to give the ability of Navigation for your Client/User.</p>
+            <pre>
+&lt;nav class="navbar"&gt;
+    &lt;div class="nav-item"&gt;
+        &lt;a href="#" class="nav-brand"&gt;LOGO&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="nav-item"&gt;
+        &lt;a href="#" class="nav-link"&gt;Home&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="nav-item"&gt;
+        &lt;a href="#" class="nav-link"&gt;Index&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="nav-item"&gt;
+        &lt;a href="#" class="nav-link"&gt;Buy PDF&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</pre>
+            <p>This will create a Navbar wth 3 buttons and a Logo</p>
+            <p>The <code>navbar</code> class defines it as a navbar with flex as display. The <code>nav-item</code> defines it as a navbar's item, that can contain something that is placed inside the navbar with some css styling. <code>nav-link</code> makes the anchor tag a navbar link that has another some specific css styles and transitions defining it as a clickable text.</p>
+            <p>Let's now create a Title showing the name of the project (for what this Doc is being created)</p>
+            <p>To do that simply create a h1 tag and type the name. Thats it</p>
+            <p>To create a button, just create a anchor tag and give it a class of "btn" and it will become a button, "btn-outline" class will give it a different look (give either "btn" or "btn-outline" to make it have different looks.</p>
+            <p>There we have 2 different types of Buttons, try hovering and clicking over them.</p>
+            <br>
+            <a href="#" class="btn">Solid</a>
+            <a href="#" class="btn-outline">Outline</a>
+            <br>
+            <br>
+            <p>It's recommended to add br tags before and after anchor tag with btn classes.</p>
+            <p>Also there are few more, that you can simply know by taking a look at the css file, its so small as it just has 147 lines and I have talked about the half here, but you can take a look at the scss file for much clear and smallllllerrr view.</p>
+        </div>
+        <hr>
+        <div>
+            <h1>Support Me</h1>
+            <p>If you want flame-css to get developed much better, you can contribute me by helping though the Github Repo.</p>
+            <br>
+            <a href="https://github.com/wildkatt-2007/flame-css" class="btn">flame-css Github</a>
+        <br>
+        <br>
+        </div>
+	<hr>
+	<div class="license-board">
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">flame-css</span> by <span property="cc:attributionName">wildkatt-2007</span> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+    </div>
+</body>
+</html>
